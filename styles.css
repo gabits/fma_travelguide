@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text');
 @import url('https://fonts.googleapis.com/css?family=Cabin+Condensed');
 
-* {
-
-}
-
 body {
-    background-color: rgba(68,47,45, 1);
+    background-color: rgba(68, 47, 45, 1);
     font-family: 'Cabin Condensed', sans-serif;
     margin: 2rem;
 }
 
 header {
-    color: rgba(209,206,200, 1);
+    color: rgba(209, 206, 200, 1);
     text-align: center;
     text-transform: uppercase;
     padding: 3em 0em 4em;
     margin: 0 auto;
 }
+
+/* Header title */
 
 #website-title {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
@@ -33,38 +31,79 @@ header {
 
 }
 
+.hover-title {
+    padding: 0;
+    margin: 0;
+}
 
+.hover-title:hover {
+    color: rgba(174, 65, 51, 1);
+}
 
 /* Main navigation */
 
 #navbar {
-    background-color: rgba(174,65,51, 1);
+    background-color: rgba(174, 65, 51, 1);
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
     font-size: 1.5em;
+    padding: 0;
 }
 
 #navbar ul {
     margin: 0;
+    padding: 0;
 }
 
 #navbar li {
     list-style: none;
     display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar li .current {
-    background-color: rgba(188,158,144, 1);
+    background-color: rgb(106, 73, 70);
 }
 
 #navbar li a {
-    color: rgba(209,206,200, 1);
+    color: rgba(209, 206, 200, 1);
     text-decoration: none;
     letter-spacing: 0.1em;
     padding: 0em 1.5em;
 }
 
+#navbar li a:hover {
+    color: rgba(188, 158, 144, 1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+footer ul li {
+    color: rgba(209, 206, 200, 1);
+}
+
+footer ul li a {
+    color: inherit;
+}
+
+footer li a:hover {
+    color: rgba(188, 158, 144, 1);
+}
+
+footer li .current {
+    color: rgba(174, 65, 51, 1);
+}
 
 /* Main Page */
 #main-page {
@@ -72,23 +111,84 @@ header {
     margin: 0 auto;
     border-radius: 15px;
     min-height: 400px;
-    background-color: rgba(209,206,200, 1);
+    background-color: rgba(209, 206, 200, 1);
 }
 
 main {
     margin: 0 auto;
-    color: rgba(68,47,45, 1);
+    color: rgba(68, 47, 45, 1);
 }
 
 a {
-    color: rgba(174,65,51, 1);
+    color: rgba(174, 65, 51, 1);
+    text-decoration: none;
 }
+
+a:hover {
+    color: rgba(200, 70, 118, 1);
+}
+
+/* Images */
 
 img {
     width: 100%;
 }
 
+figure {
+    margin: 0em 0em 2em;
+    padding: 0;
+}
+
+figcaption {
+    text-align: center;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+figcaption:hover {
+    opacity: 1;
+}
+
+/* Text formatting */
+
 .text {
     margin: 1.5em 3em;
+    padding-bottom: 1em;
     text-align: left;
+}
+
+p {
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    padding-bottom: 0.7em;
+}
+
+.text h1 {
+    font-size: 2.1em;
+    text-align: center;
+    padding: 0;
+    margin: 2em 0 1em;
+}
+
+.text-source {
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.text-source:hover {
+    opacity: 1;
+}
+
+.bold {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 900;
 }
