@@ -154,7 +154,7 @@ figcaption:hover {
 
 .text {
     margin: 1.5em 3em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     text-align: left;
 }
 
@@ -191,4 +191,21 @@ p {
     font-size: 1em;
     font-style: normal;
     font-weight: 900;
+}
+
+/* Reviews */
+.review {
+    padding: 0.6rem 1rem;
+    margin: 1em 0;
+    background-color: rgba(59,48,51, 1);
+    border-radius: 10px;
+    color: rgba(209, 206, 200, 1)
+}
+
+.review h4 {
+    color: rgba(207,157,162, 1);
+}
+
+.review p {
+    font-size: 13px;
 }
