@@ -8,6 +8,7 @@
 body {
     background-color: rgba(68,47,45, 1);
     font-family: 'Cabin Condensed', sans-serif;
+    margin: 2rem;
 }
 
 header {
@@ -20,7 +21,7 @@ header {
 
 #website-title {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
-    font-size: 6em;
+    font-size: 6rem;
     padding: 0;
     margin: 0em;
 }
@@ -42,7 +43,10 @@ header {
     font-weight: 100;
     text-transform: uppercase;
     font-size: 1.5em;
-    margin: 0.5em;
+}
+
+#navbar ul {
+    margin: 0;
 }
 
 #navbar li {
@@ -54,13 +58,37 @@ header {
     background-color: rgba(188,158,144, 1);
 }
 
-#navbar li a.current {
-    color: rgba(209,206,200, 1);
-}
-
 #navbar li a {
     color: rgba(209,206,200, 1);
     text-decoration: none;
     letter-spacing: 0.1em;
     padding: 0em 1.5em;
+}
+
+
+/* Main Page */
+#main-page {
+    max-width: 60rem;
+    margin: 0 auto;
+    border-radius: 15px;
+    min-height: 400px;
+    background-color: rgba(209,206,200, 1);
+}
+
+main {
+    margin: 0 auto;
+    color: rgba(68,47,45, 1);
+}
+
+a {
+    color: rgba(174,65,51, 1);
+}
+
+img {
+    width: 100%;
+}
+
+.text {
+    margin: 1.5em 3em;
+    text-align: left;
 }
