@@ -327,3 +327,45 @@ p {
     margin: 0;
     font-size: 1.1em;
 }
+
+
+/* Transport Information */
+#leftcol {
+    float: left;
+    margin-right: 3em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#secondary-nav {
+    background-color: rgba(188, 158, 144, 0.5);
+    margin: 0 0 2em;
+    padding: 1em;
+    min-width: 9em;
+    font-size: 1.3em;
+}
+
+#secondary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#secondary-nav ul li {
+    padding: 0.5em;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#secondary-nav ul li img {
+    width: 0.9em;
+    margin-right: 0.5em;
+}
+
+#secondary-nav ul li:hover {
+    background-color: rgba(188, 158, 144, 1);
+}
+
+#secondary-nav ul li a:hover {
+    color: rgba(174, 65, 51, 1);
+}
