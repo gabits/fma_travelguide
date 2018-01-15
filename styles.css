@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text');
 @import url('https://fonts.googleapis.com/css?family=Cabin+Condensed');
 
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     background-color: rgba(68, 47, 45, 1);
     font-family: 'Cabin Condensed', sans-serif;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 header {
@@ -21,7 +27,7 @@ header {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
     font-size: 6rem;
     padding: 0;
-    margin: 0em;
+    margin: 0;
 }
 
 #subtitle {
@@ -107,7 +113,7 @@ footer li .current {
 
 /* Main Page */
 #main-page {
-    max-width: 60rem;
+    max-width: 65rem;
     margin: 0 auto;
     border-radius: 15px;
     min-height: 400px;
@@ -127,6 +133,23 @@ a {
 a:hover {
     color: rgba(200, 70, 118, 1);
 }
+
+
+/* Responsiveness for mobile */
+@media screen and (max-width: 480px) {
+    #website-title {
+        font-size: 4rem;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    #main-page {
+        border-radius: 0;
+    }
+}
+
 
 /* Images */
 
@@ -153,7 +176,7 @@ figcaption:hover {
 /* Text formatting */
 
 .text {
-    margin: 1.5em 3em;
+    margin: 1rem 3rem;
     padding-bottom: 2em;
     text-align: left;
 }
@@ -197,15 +220,63 @@ p {
 .review {
     padding: 0.6rem 1rem;
     margin: 1em 0;
-    background-color: rgba(59,48,51, 1);
+    background-color: rgba(59, 48, 51, 1);
     border-radius: 10px;
     color: rgba(209, 206, 200, 1)
 }
 
 .review h4 {
-    color: rgba(207,157,162, 1);
+    color: rgba(207, 157, 162, 1);
 }
 
 .review p {
     font-size: 13px;
+}
+
+/* Places */
+.flexbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.place {
+    background-color: rgba(59, 48, 51, 0.3);
+    width: 11rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.place img {
+    border-radius: 9rem;
+    width: 9rem;
+    height: 9rem;
+    opacity: 0.9;
+}
+
+.place img:hover {
+    opacity: 1;
+}
+
+.place p {
+    font-size: 1.1rem;
+    color: rgba(68, 47, 45, 0.9);
+    text-align: left;
+    padding: 0.6em;
+}
+
+.place .extra-info {
+    color: rgba(68, 47, 45, 1);
+    font-size: 1em;
+}
+
+.place .text-source {
+    font-size: 0.7em;
+    text-align: left;
+    margin: inherit;
 }
