@@ -14,11 +14,15 @@ body {
 }
 
 header {
-    color: rgba(209, 206, 200, 1);
+    color: #D1CEC8;
     text-align: center;
     text-transform: uppercase;
     padding: 3em 0em 4em;
     margin: 0 auto;
+}
+
+main {
+    padding-bottom: 0.5rem;
 }
 
 /* Header title */
@@ -74,7 +78,7 @@ header {
 }
 
 #navbar li a {
-    color: rgba(209, 206, 200, 1);
+    color: #D1CEC8;
     text-decoration: none;
     letter-spacing: 0.1em;
     padding: 0em 1.5em;
@@ -96,7 +100,7 @@ footer ul li {
 }
 
 footer ul li {
-    color: rgba(209, 206, 200, 1);
+    color: #D1CEC8;
 }
 
 footer ul li a {
@@ -117,7 +121,7 @@ footer li .current {
     margin: 0 auto;
     border-radius: 15px;
     min-height: 400px;
-    background-color: rgba(209, 206, 200, 1);
+    background-color: #D1CEC8;
 }
 
 main {
@@ -202,7 +206,7 @@ p {
 
 /* Home */
 .content {
-    margin: 1rem 2rem;
+    margin: 1rem 3em;
     padding-bottom: 1em;
     text-align: left;
 }
@@ -227,7 +231,7 @@ p {
     margin: 1em 1em;
     background-color: rgba(59, 48, 51, 0.85);
     border-radius: 10px;
-    color: rgba(209, 206, 200, 1);
+    color: #D1CEC8;
     display: inline;
     width: 45%;
 }
@@ -300,4 +304,26 @@ p {
     font-size: 0.7em;
     text-align: left;
     margin: inherit;
+}
+
+/* Travel tips */
+.tip {
+    background-color: rgba(59, 48, 51, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.tip h3 {
+    padding: 0;
+    margin: 0 0 1.2em;
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(141, 53, 42);
+}
+
+.tip p {
+    padding: 0 0 1em;
+    margin: 0;
+    font-size: 1.1em;
 }
